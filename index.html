@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ohmyfood</title>
+  <link rel="stylesheet" type="text/css" href="css/main.css">
+</head>
+
+<body>
+  <header>
+    <div id="entete-img">
+      <img srcset="images/logo/ohmyfood@2x.svg 191w,
+                     images/logo/ohmyfood@2x.svg 3x"
+             sizes="(max-width: 768px) 200px, 70px"
+             src="images/logo/ohmyfood@2x.svg" alt="Ohmyfood" />
+    </div>
+  </header>
+   
+    <nav>                                
+      <div id="localisation">
+        <img id="localisation__logo" src="images/logo/MapMarker.svg" alt="Logo-localisation"/>
+          <form method="post" action="#">
+            <input class="localisation_recherche" type="text" name="myrestaurant" id="myville" placeholder="Paris, Belleville">                
+          </form>
+      </div>
+
+      <div id="exploration">
+        <h1>Réservez le menu qui vous convient</h1>
+        <h2>Découvrez des restaurants d'exception, sélectionnés par nos soins.</h2>
+          <a href="#" id=exploration-bt> 
+            <div class="bt">          
+              <p>Explorer nos restaurants</p>
+            </div>
+          </a>
+      </div> 
+    </nav>
+  
+
+<!--Fonctionnement-->
+  <section id="menu-fonctionnement">
+    <h1>Fonctionnement</h1>
+    <a href="#" class="bt-fonctionnement">
+      <div class="bt-fonctionnement__numero"></div>
+      <div class="bt-fonctionnement__logo">
+          <img id="bt-fonctionnement__logo--image" src="" alt="logo_choix_restaurant"/>
+      </div>
+      <p>Choisissez un restaurant</p>
+    </a>
+
+    <a href="#" class="bt-fonctionnement">
+      <div class="bt-fonctionnement__numero"></div>
+      <div class="bt-fonctionnement__logo">
+          <img id="bt-fonctionnement__logo--image" src="" alt="logo_compo_menu"/>
+      </div>
+      <p>Composez votre menu</p>
+    </a>
+
+    <a href="#" class="bt-fonctionnement">
+      <div class="bt-fonctionnement__numero"></div>
+      <div class="bt-fonctionnement__bt_logo">
+          <img id="bt-fonctionnement__logo--image" src="" alt="logo_degustez"/>
+      </div>
+      <p>Dégustez au restaurant</p>
+    </a>
+  </section>
+
+  <!--Restaurants-->
+  <section id="restaurants">
+    <h1>Restaurants</h1>
+    <div id=liste-restaurant>
+      <a href="#" class="tuille-restaurant">
+        <div class="tuille-restaurant__image">
+          <img src="images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg"
+               alt="restautrant-palette-gout"
+          />
+        </div>
+        <h3 class="tuille-restaurant__nom">La palette du goût</h3>
+        <p class="tuille-restaurant__lieu">Ménilmontant</p>
+        <div class="tuille-restaurant__favoris">
+            <img src="" alt="heart" />
+        </div>
+      </a>
+
+      <a href="#" class="tuille-restaurant">
+        <div class="tuille-restaurant__image">
+          <img src="images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg"
+               alt="restautrant-note-enchantée"
+          />
+        </div>
+        <h3 class="tuille-restaurant__nom">La note enchantée</h3>
+        <p class="tuille-restaurant__lieu">Charonne</p>
+        <div class="tuille-restaurant__favoris">
+            <img src="" alt="heart" />
+        </div>
+      </a>
+
+      <a href="#" class="tuille-restaurant">
+        <div class="tuille-restaurant__image">
+          <img src="images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg"
+               alt="restautrant-française"
+          />
+        </div>
+        <h3 class="tuille-restaurant__nom">À la française</h3>
+        <p class="tuille-restaurant__lieu">Cité Rouge</p>
+        <div class="tuille-restaurant__favoris">
+            <img src="" alt="heart" />
+        </div>
+      </a>
+
+      <a href="#" class="tuille-restaurant">
+        <div class="tuille-restaurant__image">
+          <img src="images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg"
+               alt="restautrant-délice"
+          />
+        </div>
+        <h3 class="tuille-restaurant__nom">Le délice des sens</h3>
+        <p class="tuille-restaurant__lieu">Folie-Méricourt</p>
+        <div class="tuille-restaurant__favoris">
+            <img src="" alt="heart" />
+        </div>
+      </a>
+    </div>
+  </section>
+
+<footer>
+  <div id="entete-img">
+    <img srcset="images/logo/ohmyfood@2x.svg 191w,
+                   images/logo/ohmyfood@2x.svg 3x"
+           sizes="(max-width: 768px) 200px, 70px"
+           src="images/logo/ohmyfood@2x.svg" alt="Ohmyfood" />    
+ </div>
+ <div class="menu-footer">
+      <a href="#">
+        <img id="couverts" src="images/logo/couverts.svg" alt="couverts">
+        <p>Proposer un restaurant</p>
+      </a>
+      <a href="#">
+      <img id="mains" src="images/logo/mains.svg" alt="mains">
+        <p>Devenir partenaire</p>
+      </a>
+      <a href="#">Contact</a>
+  </div>
+</footer>
+</body>
+</html>
