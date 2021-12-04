@@ -93,7 +93,6 @@ abbr[title] {
   /* 1 */
   text-decoration: underline;
   /* 2 */
-  -webkit-text-decoration: underline dotted;
   text-decoration: underline dotted;
   /* 2 */
 }
@@ -363,7 +362,6 @@ html {
   align-items: center;
   margin: 10px 0px 10px 0px;
 }
-
 #entete-img img {
   height: 30px;
 }
@@ -372,7 +370,6 @@ nav {
   display: flex;
   flex-direction: column;
 }
-
 nav h3 {
   color: #eaeaea;
 }
@@ -385,7 +382,6 @@ nav h3 {
   background-color: #eaeaea;
   box-shadow: inset 0px 11px 5px -10px #CCC;
 }
-
 #localisation__logo {
   width: 5%;
   height: auto;
@@ -402,7 +398,6 @@ input {
   color: black;
   background-color: #eaeaea;
 }
-
 input:focus {
   outline: none;
 }
@@ -415,15 +410,12 @@ input:focus {
   padding: 20px 0px 30px 0px;
   background-color: #f7f7f7;
 }
-
 #exploration > * {
   text-align: center;
 }
-
 #exploration h1 {
   padding-bottom: 10px;
 }
-
 #exploration h2 {
   font-size: larger;
   font-weight: normal;
@@ -440,15 +432,12 @@ input:focus {
   position: relative;
   z-index: 1;
 }
-
 .bt p {
   color: white;
 }
-
 .bt:hover::after {
-  opacity: 1;
+  opacity: 0.2;
 }
-
 .bt::after {
   content: "";
   position: absolute;
@@ -456,12 +445,10 @@ input:focus {
   right: 0;
   bottom: 0;
   left: 0;
-  background-color: black;
+  background-color: whitesmoke;
   opacity: 0;
   z-index: -1;
   transition: opacity 250ms;
 }
 
-/*# sourceMappingURL=main.css.map */
-
-/*# sourceMappingURL=main.css.map */
+/*# sourceMappingURL=style.css.map */
