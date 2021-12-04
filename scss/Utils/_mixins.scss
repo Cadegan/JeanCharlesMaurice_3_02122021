@@ -32,15 +32,17 @@
 @mixin fonctionnement {
     display: flex;
     align-items: center;
-    background-color: $fond;
+    background-color: lighten($fond, 5%);
     margin: 20px;
-    padding: 10px;
+    padding: 20px 10px 20px 10px;
+    border-radius: 20px;
 }
 
 @mixin bt-fonctionnement__numero {
     display: flex;
-    width: 1em;
-    height: 1em;
+    width: 1.2em;
+    height: 1.2em;
+    margin-left: -18px;
     background: $color-primary;
     align-items: center;
     justify-content: space-around;

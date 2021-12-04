@@ -1,5 +1,6 @@
 .bt-fonctionnement {
     @include fonctionnement;
+    @include ombre;
 
     &__numero {
         @include bt-fonctionnement__numero;
@@ -10,8 +11,18 @@
         width: auto;
     }
 
-    & img {
+    img {
         height: 16px;
         width: auto;
+        margin: 0px 15px 0px 15px;
+    }
+
+    p {
+        font-weight: bold;
+        color: black;
+    }
+
+    &:hover {
+        background-color: $fond;
     }
 }
