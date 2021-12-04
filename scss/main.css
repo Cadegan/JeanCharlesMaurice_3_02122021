@@ -450,4 +450,30 @@ input:focus {
   opacity: 0;
   z-index: -1;
   transition: opacity 250ms;
+}
+
+.bt-fonctionnement {
+  display: flex;
+  align-items: center;
+  background-color: #eaeaea;
+  margin: 20px;
+  padding: 10px;
+}
+.bt-fonctionnement__numero {
+  display: flex;
+  width: 1em;
+  height: 1em;
+  background: #9356DC;
+  align-items: center;
+  justify-content: space-around;
+  border-radius: 50px;
+  color: white;
+}
+.bt-fonctionnement__logo {
+  height: 16px;
+  width: auto;
+}
+.bt-fonctionnement img {
+  height: 16px;
+  width: auto;
 }/*# sourceMappingURL=main.css.map */

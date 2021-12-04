@@ -1,0 +1,17 @@
+.bt-fonctionnement {
+    @include fonctionnement;
+
+    &__numero {
+        @include bt-fonctionnement__numero;
+    }
+
+    &__logo {
+        height: 16px;
+        width: auto;
+    }
+
+    & img {
+        height: 16px;
+        width: auto;
+    }
+}
