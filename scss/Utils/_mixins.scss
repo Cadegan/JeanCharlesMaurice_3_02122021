@@ -64,14 +64,15 @@
 }
 
 @mixin new {
-    margin-left: -100px;
-    margin-top: 20px;
+    margin-left: -105px;
+    margin-top: 15px;
 
     p {
         background-color: $color-new-bg;
         color: $color-new-text;
         border-radius: 2px;
-        padding: 15px;
+        padding: 8px 15px 8px 15px;
+        font-weight: bold;
     }
 
 

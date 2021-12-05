@@ -49,14 +49,27 @@
     object-position: center;
 }
 
-.tuille-restaurant__text {
-    padding: 10px;
+.tuille-restaurant__info {
+    padding: 15px 25px 15px 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 
     p {
         padding-top: 5px;
+    }
+
+    img {
+        width: 100%;
+        height: auto;
     }
 }
 
 .label-new {
     @include new;
+}
+
+.tuille-restaurant__favoris {
+    height: 25px;
+    width: 25px;
 }
