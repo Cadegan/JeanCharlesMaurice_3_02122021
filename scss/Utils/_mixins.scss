@@ -29,6 +29,10 @@
     box-shadow: 0px 4px 5px $shadow-color;
 }
 
+@mixin ombre-light {
+    box-shadow: 2px 2px 10px $shadow-color;
+}
+
 @mixin liste-fonctionnement {
     display: flex;
     align-items: center;
@@ -59,6 +63,31 @@
         background-color: $color;
         opacity: 0;
         z-index: -1;
+        transition: opacity 250ms;
+    }
+}
+
+@mixin survol-bis ($color:whitesmoke) {
+    position: relative;
+    z-index: 1;
+
+    &:hover {
+        &::after {
+            opacity: 0.2;
+        }
+    }
+
+    &::after {
+        content: "";
+        position: absolute;
+        border-radius: 10px;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        background-color: $color;
+        opacity: 0;
+        z-index: 1;
         transition: opacity 250ms;
     }
 }
