@@ -1,35 +1,4 @@
-
-
-@mixin recherche {
-    border: none;
-    font-size: 1rem;
-    padding: 20px 5px 20px 5px;
-    margin-top: 5px;
-    text-align: center;
-    width: 150px;
-}
-
-@mixin bg-banderole-color {
-    background-color: $fond;
-    box-shadow: inset 0px 11px 5px -10px $shadow-color;
-}
-
-@mixin bt-model {
-    cursor: pointer;
-    margin-top: 20px;
-    background: $rainbow-color;
-    padding: 10px;
-    border-radius: 20px;
-
-    & p {
-        color: white;
-    }
-
-}
-
-@mixin ombre {
-    box-shadow: 0px 4px 5px $shadow-color;
-}
+/*Entête et navigation principale*/
 
 #entete-img {
     display: flex;
@@ -106,27 +75,7 @@ input {
 }
 
 .bt {
-    @include ombre;
     @include bt-model;
-    position: relative;
-    z-index: 1;
-
-    &:hover {
-        &::after {
-            opacity: 0.2;
-        }
-    }
-
-    &::after {
-        content: "";
-        position: absolute;
-        top: 0;
-        right: 0;
-        bottom: 0;
-        left: 0;
-        background-color: whitesmoke ;
-        opacity: 0;
-        z-index: -1;
-        transition: opacity 250ms;
-    }
+    @include ombre;
+    @include survol;
 }

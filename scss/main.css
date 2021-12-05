@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 /* Document
    ========================================================================== */
@@ -34,15 +35,12 @@ main {
  */
 h1 {
   font-size: 1.5em;
-  margin: 0px 0px 0px 0px;
+  margin: 0px;
 }
 
-h2 {
-  margin: 0px 0px 0px 0px;
-}
-
-p {
-  margin: 0px 0px 0px 0px;
+h1, h2, h3, p {
+  margin: 0px;
+  color: black;
 }
 
 /* Grouping content
@@ -355,6 +353,7 @@ html {
   font-family: "Roboto", sans-serif;
 }
 
+/*Entête et navigation principale*/
 #entete-img {
   display: flex;
   width: 100%;
@@ -424,12 +423,12 @@ input:focus {
 }
 
 .bt {
-  box-shadow: 0px 4px 5px #CCC;
   cursor: pointer;
   margin-top: 20px;
   background: linear-gradient(0deg, #9356DC 0%, #FF79DA 100%);
   padding: 10px;
   border-radius: 20px;
+  box-shadow: 0px 4px 5px #CCC;
   position: relative;
   z-index: 1;
 }
@@ -442,6 +441,7 @@ input:focus {
 .bt::after {
   content: "";
   position: absolute;
+  border-radius: 20px;
   top: 0;
   right: 0;
   bottom: 0;
@@ -452,14 +452,37 @@ input:focus {
   transition: opacity 250ms;
 }
 
+/*Liste "fonctionnement"*/
+#menu-fonctionnement {
+  margin: 20px;
+}
+
 .bt-fonctionnement {
   display: flex;
   align-items: center;
   background-color: #f7f7f7;
-  margin: 20px;
+  margin: 20px 0px 20px 0px;
   padding: 20px 10px 20px 10px;
   border-radius: 20px;
   box-shadow: 0px 4px 5px #CCC;
+  position: relative;
+  z-index: 1;
+}
+.bt-fonctionnement:hover::after {
+  opacity: 0.2;
+}
+.bt-fonctionnement::after {
+  content: "";
+  position: absolute;
+  border-radius: 20px;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: darkgrey;
+  opacity: 0;
+  z-index: -1;
+  transition: opacity 250ms;
 }
 .bt-fonctionnement__numero {
   display: flex;
@@ -485,11 +508,10 @@ input:focus {
   font-weight: bold;
   color: black;
 }
-.bt-fonctionnement:hover {
-  background-color: #eaeaea;
-}
 
+/*Tuilles restaurants*/
 #restaurants {
+  width: auto;
   background-color: #eaeaea;
   padding: 30px 20px 0px 20px;
   display: flex;
@@ -499,6 +521,13 @@ input:focus {
   margin-bottom: 20px;
 }
 
+#liste-restaurant {
+  width: auto;
+  display: flex;
+  flex-direction: column;
+  align-content: space-between;
+}
+
 .tuille-restaurant {
   display: flex;
   flex-direction: column;
@@ -506,12 +535,13 @@ input:focus {
   background-color: white;
   border-radius: 15px 15px 15px 15px;
   margin-bottom: 25px;
-  width: 30%;
+  width: auto;
   height: auto;
   box-shadow: 2px 2px 10px lightgrey;
 }
 
 .tuille-restaurant__image {
+  display: flex;
   border-radius: 10px 10px 0px 0px;
   height: 100%;
   width: 100%;
@@ -528,4 +558,22 @@ input:focus {
      object-fit: cover;
   -o-object-position: center;
      object-position: center;
+}
+
+.tuille-restaurant__text {
+  padding: 10px;
+}
+.tuille-restaurant__text p {
+  padding-top: 5px;
+}
+
+.label-new {
+  margin-left: -100px;
+  margin-top: 20px;
+}
+.label-new p {
+  background-color: #99e2d0;
+  color: #008766;
+  border-radius: 2px;
+  padding: 15px;
 }/*# sourceMappingURL=main.css.map */

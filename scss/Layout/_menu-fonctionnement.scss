@@ -1,9 +1,23 @@
+/*Liste "fonctionnement"*/
+#menu-fonctionnement {
+    margin: 20px;
+}
+
 .bt-fonctionnement {
-    @include fonctionnement;
+    @include liste-fonctionnement;
     @include ombre;
+    @include survol ($color:darkgrey);
 
     &__numero {
-        @include bt-fonctionnement__numero;
+        display: flex;
+        width: 1.2em;
+        height: 1.2em;
+        margin-left: -18px;
+        background: $color-primary;
+        align-items: center;
+        justify-content: space-around;
+        border-radius: 50px;
+        color: white;
     }
 
     &__logo {
@@ -20,9 +34,5 @@
     p {
         font-weight: bold;
         color: black;
-    }
-
-    &:hover {
-        background-color: $fond;
     }
 }

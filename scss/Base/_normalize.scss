@@ -41,15 +41,12 @@ main {
 
 h1 {
     font-size: 1.5em;
-    margin: 0px 0px 0px 0px;
+    margin: 0px
 }
 
-h2 {
-    margin: 0px 0px 0px 0px;
-}
-
-p {
-    margin: 0px 0px 0px 0px;
+h1, h2, h3, p {
+    margin: 0px;
+    color: black;
 }
 
 /* Grouping content

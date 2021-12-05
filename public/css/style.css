@@ -489,6 +489,7 @@ input:focus {
 }
 
 #restaurants {
+  width: auto;
   background-color: #eaeaea;
   padding: 30px 20px 0px 20px;
   display: flex;
@@ -496,6 +497,13 @@ input:focus {
 }
 #restaurants h1 {
   margin-bottom: 20px;
+}
+
+#liste-restaurant {
+  width: auto;
+  display: flex;
+  flex-direction: column;
+  align-content: space-between;
 }
 
 .tuille-restaurant {
