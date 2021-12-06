@@ -607,4 +607,49 @@ input:focus {
 .tuille-restaurant__favoris {
   height: 25px;
   width: 25px;
+}
+
+/*Footer*/
+footer {
+  background-color: #353535;
+  display: flex;
+  flex-direction: column;
+  padding: 30px 20px 30px 20px;
+}
+footer p,
+footer a {
+  color: white;
+}
+footer a {
+  margin-bottom: 10px;
+}
+
+.menu-footer {
+  display: flex;
+  flex-direction: column;
+}
+
+#foot-img-ohmyfood {
+  margin-bottom: 25px;
+  filter: invert(100%) sepia(100%) saturate(2%) hue-rotate(68deg) brightness(108%) contrast(101%);
+}
+#foot-img-ohmyfood img {
+  width: 100px;
+  height: auto;
+}
+
+.menu-footer-icon-text {
+  display: flex;
+  align-items: center;
+}
+.menu-footer-icon-text_img {
+  height: 1em;
+  width: 1em;
+  display: flex;
+  justify-content: center;
+  margin-right: 10px;
+}
+.menu-footer-icon-text_img img {
+  height: 100%;
+  width: auto;
 }/*# sourceMappingURL=main.css.map */

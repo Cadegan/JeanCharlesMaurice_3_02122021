@@ -1,0 +1,43 @@
+/*Footer*/
+
+footer {
+    background-color: $footer-color;
+    display: flex;
+    flex-direction: column;
+    padding: 30px 20px 30px 20px;
+
+    p,
+    a {
+        color: white;
+    }
+
+    a {
+        margin-bottom: 10px;
+    }
+}
+
+.menu-footer {
+    display: flex;
+    flex-direction: column;
+}
+
+
+#foot-img-ohmyfood {
+    margin-bottom: 25px;
+    filter: invert(100%) sepia(100%) saturate(2%) hue-rotate(68deg) brightness(108%) contrast(101%);
+
+    img {
+        width: 100px;
+        height: auto;
+    }
+}
+
+.menu-footer-icon-text {
+    display: flex;
+    align-items: center;
+
+    &_img {
+        @include footer-icon-text;
+        margin-right: 10px;
+    }
+}
