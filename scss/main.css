@@ -452,6 +452,29 @@ input:focus {
   transition: opacity 250ms;
 }
 
+/*pages secondaires*/
+#entete-img-secondaire {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 30px;
+  margin: 10px 0px 10px 0px;
+  position: relative;
+}
+
+#ohmyfood-secondaire {
+  height: 30px;
+}
+
+.retour {
+  position: absolute;
+  left: 20px;
+  height: 15px;
+}
+.retour img {
+  height: 100%;
+}
+
 /*Liste "fonctionnement"*/
 #menu-fonctionnement {
   margin: 20px;
