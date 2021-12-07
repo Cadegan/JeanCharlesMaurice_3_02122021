@@ -29,7 +29,7 @@
     width: auto;
     height: auto;
     @include ombre-light;
-    @include survol-bis;
+    /*@include survol-bis;*/
 }
 
 .tuille-restaurant__image {
@@ -85,21 +85,24 @@
     .heart {
         z-index: 1;
         opacity: 1;
+        transition: all 250ms ease-in-out;
     }
 
     .heart-rainbow {
         transform: scale(0.3);
         z-index: 0;
-        opacity: 1;
+        opacity: 0;
+        transition: all 250ms ease-in-out;
     }
 
+    &:hover {
+        .heart {
+            opacity: 0;
+        }
 
-}
-
-.tuille-restaurant__favoris:hover .heart-rainbow {
-    transform: scale(1.5);
-}
-
-.heart-rainbow {
-    transition: transform 250ms ease-in-out;
+        .heart-rainbow {
+            transform: scale(1);
+            opacity: 1;
+        }
+    }
 }
