@@ -49,7 +49,6 @@
 .vignette-plat {
     @include plat-model;
     @include ombre-light;
-    transition: all 450ms;
 
     &-nom {
         display: flex;
@@ -62,14 +61,19 @@
         }
     }
 
-    &:hover + .plat-select {
-        transform: translateX(0px);
+    &:hover .plat-select {
+        transform: translate(-70px);
     }
 
 }
 
 .plat-select {
     position: absolute;
+    transition: all 450ms;
+    width: 70px;
+    height: 60px;
+    right: -70px;
+    top: 0px;
     @include plat-select-model;
 }
 
