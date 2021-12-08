@@ -1,0 +1,53 @@
+/*entete principale*/
+
+#entete-img {
+    display: flex;
+    width: 100%;
+    height: auto;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 0px 10px 0px;
+
+    img {
+        height: 30px;
+    }
+}
+
+/*pages secondaires*/
+
+#entete-img-secondaire {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 30px;
+    margin: 10px 0px 10px 0px;
+    position: relative;
+}
+
+#ohmyfood-secondaire {
+    height: 30px;
+}
+
+.retour {
+    position: absolute;
+    left: 20px;
+    height: 15px;
+
+    img {
+        height: 100%;
+    }
+}
+
+#page-secondaire {
+    display: flex;
+    flex-direction: column;
+}
+
+#img-restaurant {
+    height: auto;
+
+    img {
+        width: 100%;
+        height: auto;
+    }
+}

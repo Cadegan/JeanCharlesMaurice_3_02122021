@@ -1,0 +1,78 @@
+/*Menu par retaurant*/
+* {
+    box-sizing: border-box;
+}
+
+#menu-degustation {
+    background-color: lighten($fond, 5%);
+    margin-top: -50px;
+    border-radius: 20px 20px 0px 0px;
+    padding: 20px 0px 30px 0px;
+}
+
+.nom-retaurant {
+    display: flex;
+    align-items: center;
+    font-family: Shrikhand, sans-serif;
+    margin-bottom: 30px;
+    padding: 0px 10px 0px 10px;
+
+    img {
+        width: 1.2em;
+        padding-left: 30%;
+    }
+}
+
+.titre-ordre {
+    h2 {
+        font-weight: normal;
+    }
+
+    &-div {
+        margin-bottom: 15px;
+        padding: 0px 10px 0px 10px;
+    }
+}
+
+
+
+.line {
+    @include titre-ordre-line;
+}
+
+.liste-plat {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.vignette-plat {
+    @include plat-model;
+    @include ombre-light;
+    transition: all 450ms;
+
+    &-nom {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+
+        &-info {
+            display: flex;
+            justify-content: space-between;
+        }
+    }
+
+    &:hover + .plat-select {
+        transform: translateX(0px);
+    }
+
+}
+
+.plat-select {
+    position: absolute;
+    @include plat-select-model;
+}
+
+.cercle-check {
+    @include cercle-check-model;
+}

@@ -118,3 +118,48 @@
         width: auto;
     }
 }
+
+@mixin titre-ordre-line {
+    border-top-width: 3px;
+    border-top-style: solid;
+    width: 17%;
+    border-color: $color-tertiary;
+}
+
+@mixin plat-model {
+    display: flex;
+    position: relative;
+    cursor: pointer;
+    margin: 10px;
+    border-radius: 15px;
+    padding: 10px;
+    width: auto;
+    background-color: white;
+    overflow: hidden;
+}
+
+@mixin plat-select-model {
+    width: 70px;
+    height: 60px;
+    border-radius: 0px 15px 15px 0px;
+    background-color: $color-tertiary;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    right: -70px;
+    top: 0px;
+}
+
+@mixin cercle-check-model {
+    min-width: 25px;
+    min-height: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: white;
+    border-radius: 25px;
+
+    p {
+        color: $color-tertiary;
+    }
+}
