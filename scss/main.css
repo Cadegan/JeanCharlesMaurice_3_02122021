@@ -746,10 +746,13 @@ input:focus {
 .vignette-plat:hover .plat-select {
   transform: translate(-70px);
 }
+.vignette-plat:hover .cercle-check {
+  transform: rotate(-360deg);
+}
 
 .plat-select {
   position: absolute;
-  transition: all 450ms;
+  transition: all 450ms ease-in-out;
   width: 70px;
   height: 60px;
   right: -70px;
@@ -762,6 +765,7 @@ input:focus {
 }
 
 .cercle-check {
+  transition: all 450ms ease-in-out;
   min-width: 25px;
   min-height: 25px;
   display: flex;
