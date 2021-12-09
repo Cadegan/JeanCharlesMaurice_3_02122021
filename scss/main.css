@@ -590,7 +590,13 @@ input:focus {
   color: grey;
 }
 
-.bt {
+#bt-exploration {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 10px;
+}
+#bt-exploration .bt-model {
+  display: flex;
   cursor: pointer;
   margin-top: 20px;
   background: linear-gradient(0deg, #9356DC 0%, #FF79DA 100%);
@@ -600,13 +606,15 @@ input:focus {
   position: relative;
   z-index: 1;
 }
-.bt p {
+#bt-exploration .bt-model * {
+  text-align: center;
   color: white;
 }
-.bt:hover::after {
+#bt-exploration .bt-model:hover::after {
   opacity: 0.2;
+  transition: opacity 300ms;
 }
-.bt::after {
+#bt-exploration .bt-model::after {
   content: "";
   position: absolute;
   border-radius: 20px;
@@ -617,6 +625,46 @@ input:focus {
   background-color: whitesmoke;
   opacity: 0;
   z-index: -1;
+  box-shadow: 0px 4px 5px black;
+  transition: opacity 250ms;
+}
+
+#bt-commander {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+#bt-commander .bt-model {
+  display: flex;
+  cursor: pointer;
+  margin-top: 20px;
+  background: linear-gradient(0deg, #9356DC 0%, #FF79DA 100%);
+  padding: 10px 20px 10px 20px;
+  border-radius: 20px;
+  box-shadow: 0px 4px 5px #CCC;
+  position: relative;
+  z-index: 1;
+}
+#bt-commander .bt-model * {
+  text-align: center;
+  color: white;
+}
+#bt-commander .bt-model:hover::after {
+  opacity: 0.2;
+  transition: opacity 300ms;
+}
+#bt-commander .bt-model::after {
+  content: "";
+  position: absolute;
+  border-radius: 20px;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: whitesmoke;
+  opacity: 0;
+  z-index: -1;
+  box-shadow: 0px 4px 5px black;
   transition: opacity 250ms;
 }
 
@@ -638,6 +686,7 @@ input:focus {
 }
 .bt-fonctionnement:hover::after {
   opacity: 0.2;
+  transition: opacity 300ms;
 }
 .bt-fonctionnement::after {
   content: "";
@@ -650,6 +699,7 @@ input:focus {
   background-color: darkgrey;
   opacity: 0;
   z-index: -1;
+  box-shadow: 0px 4px 5px black;
   transition: opacity 250ms;
 }
 .bt-fonctionnement__numero {
@@ -686,7 +736,7 @@ input:focus {
   background-color: #f7f7f7;
   margin-top: -50px;
   border-radius: 20px 20px 0px 0px;
-  padding: 20px 0px 30px 0px;
+  padding: 20px 10px 30px 10px;
 }
 
 .nom-retaurant {
@@ -694,19 +744,20 @@ input:focus {
   align-items: center;
   font-family: Shrikhand, sans-serif;
   margin-bottom: 30px;
-  padding: 0px 10px 0px 10px;
 }
 .nom-retaurant img {
   width: 1.2em;
-  padding-left: 30%;
+  margin-left: 50px;
 }
 
+.titre-ordre {
+  margin-top: 20px;
+}
 .titre-ordre h2 {
   font-weight: normal;
 }
-.titre-ordre-div {
+.titre-ordre-plat-div {
   margin-bottom: 15px;
-  padding: 0px 10px 0px 10px;
 }
 
 .line {
@@ -726,7 +777,7 @@ input:focus {
   display: flex;
   position: relative;
   cursor: pointer;
-  margin: 10px;
+  margin: 10px 0px 10px 0px;
   border-radius: 15px;
   padding: 10px;
   width: auto;
@@ -734,10 +785,17 @@ input:focus {
   overflow: hidden;
   box-shadow: 2px 2px 10px #CCC;
 }
+.vignette-plat .ingredient,
+.vignette-plat h3 {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
 .vignette-plat-nom {
   display: flex;
   flex-direction: column;
   width: 100%;
+  transition: all 450ms ease-in-out;
 }
 .vignette-plat-nom-info {
   display: flex;
@@ -748,6 +806,13 @@ input:focus {
 }
 .vignette-plat:hover .cercle-check {
   transform: rotate(-360deg);
+}
+.vignette-plat:hover .vignette-plat-nom {
+  padding-right: 70px;
+}
+
+.plat-detail-prix {
+  padding-left: 10px;
 }
 
 .plat-select {

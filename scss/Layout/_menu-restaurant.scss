@@ -7,7 +7,7 @@
     background-color: lighten($fond, 5%);
     margin-top: -50px;
     border-radius: 20px 20px 0px 0px;
-    padding: 20px 0px 30px 0px;
+    padding: 20px 10px 30px 10px;
 }
 
 .nom-retaurant {
@@ -15,22 +15,22 @@
     align-items: center;
     font-family: Shrikhand, sans-serif;
     margin-bottom: 30px;
-    padding: 0px 10px 0px 10px;
 
     img {
         width: 1.2em;
-        padding-left: 30%;
+        margin-left: 50px;
     }
 }
 
 .titre-ordre {
+    margin-top: 20px;
+
     h2 {
         font-weight: normal;
     }
 
-    &-div {
+    &-plat-div {
         margin-bottom: 15px;
-        padding: 0px 10px 0px 10px;
     }
 }
 
@@ -50,10 +50,18 @@
     @include plat-model;
     @include ombre-light;
 
+    .ingredient,
+    h3 {
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+
     &-nom {
         display: flex;
         flex-direction: column;
         width: 100%;
+        transition: all 450ms ease-in-out;
 
         &-info {
             display: flex;
@@ -69,6 +77,13 @@
         transform: rotate(-360deg);
     }
 
+    &:hover .vignette-plat-nom {
+        padding-right: 70px;
+    }
+}
+
+.plat-detail-prix {
+    padding-left: 10px;
 }
 
 .plat-select {
