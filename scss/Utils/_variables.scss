@@ -181,3 +181,21 @@ $rainbow-color: linear-gradient(0deg, $color-primary 0%, $color-secondary 100%);
 
 $padding-bt-court : 10px;
 $padding-bt-long : 10px 20px 10px 20px;
+
+$nombre-plat: (trois:3, quatre:4);
+$anim-dur: 300ms;
+$anim-delay: $anim-dur / 0.7;
+
+@keyframes vignette {
+    0% {
+        animation-timing-function: cubic-bezier(.17, .67, .83, .67);
+        transform: translateY(0.5rem);
+        opacity: 0%;
+    }
+
+    100% {
+        animation-timing-function: cubic-bezier(.17, .67, .83, .67);
+        opacity: 100%;
+        transform: translateY(0rem);
+    }
+}

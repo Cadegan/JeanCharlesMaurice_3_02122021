@@ -130,6 +130,34 @@
   font-style: italic;
   font-display: swap;
 }
+@-webkit-keyframes vignette {
+  0% {
+    -webkit-animation-timing-function: cubic-bezier(0.17, 0.67, 0.83, 0.67);
+            animation-timing-function: cubic-bezier(0.17, 0.67, 0.83, 0.67);
+    transform: translateY(0.5rem);
+    opacity: 0%;
+  }
+  100% {
+    -webkit-animation-timing-function: cubic-bezier(0.17, 0.67, 0.83, 0.67);
+            animation-timing-function: cubic-bezier(0.17, 0.67, 0.83, 0.67);
+    opacity: 100%;
+    transform: translateY(0rem);
+  }
+}
+@keyframes vignette {
+  0% {
+    -webkit-animation-timing-function: cubic-bezier(0.17, 0.67, 0.83, 0.67);
+            animation-timing-function: cubic-bezier(0.17, 0.67, 0.83, 0.67);
+    transform: translateY(0.5rem);
+    opacity: 0%;
+  }
+  100% {
+    -webkit-animation-timing-function: cubic-bezier(0.17, 0.67, 0.83, 0.67);
+            animation-timing-function: cubic-bezier(0.17, 0.67, 0.83, 0.67);
+    opacity: 100%;
+    transform: translateY(0rem);
+  }
+}
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 /* Document
    ========================================================================== */
@@ -626,7 +654,7 @@ input:focus {
   opacity: 0;
   z-index: -1;
   box-shadow: 0px 4px 5px black;
-  transition: opacity 250ms;
+  transition: opacity 250ms ease-in-out;
 }
 
 #bt-commander {
@@ -665,7 +693,7 @@ input:focus {
   opacity: 0;
   z-index: -1;
   box-shadow: 0px 4px 5px black;
-  transition: opacity 250ms;
+  transition: opacity 250ms ease-in-out;
 }
 
 /*Liste "fonctionnement"*/
@@ -700,7 +728,7 @@ input:focus {
   opacity: 0;
   z-index: -1;
   box-shadow: 0px 4px 5px black;
-  transition: opacity 250ms;
+  transition: opacity 250ms ease-in-out;
 }
 .bt-fonctionnement__numero {
   display: flex;
@@ -784,6 +812,20 @@ input:focus {
   background-color: white;
   overflow: hidden;
   box-shadow: 2px 2px 10px #CCC;
+  -webkit-animation: vignette 300ms backwards;
+          animation: vignette 300ms backwards;
+}
+.vignette-plat-1 {
+  -webkit-animation-delay: 428.5714285714ms;
+          animation-delay: 428.5714285714ms;
+}
+.vignette-plat-2 {
+  -webkit-animation-delay: 857.1428571429ms;
+          animation-delay: 857.1428571429ms;
+}
+.vignette-plat-3 {
+  -webkit-animation-delay: 1285.7142857143ms;
+          animation-delay: 1285.7142857143ms;
 }
 .vignette-plat .ingredient,
 .vignette-plat h3 {

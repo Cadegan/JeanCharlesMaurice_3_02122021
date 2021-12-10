@@ -49,6 +49,13 @@
 .vignette-plat {
     @include plat-model;
     @include ombre-light;
+    animation: vignette $anim-dur backwards;
+
+    @for $i from 1 through 3 {
+        &-#{$i} {
+            animation-delay: $anim-delay * $i;
+        }
+    }
 
     .ingredient,
     h3 {
