@@ -19,6 +19,10 @@
     align-content: space-between;
 }
 
+.restaurant {
+    position: relative;
+}
+
 .tuille-restaurant {
     display: flex;
     flex-direction: column;
@@ -29,7 +33,7 @@
     width: auto;
     height: auto;
     @include ombre-light;
-    /*@include survol-bis;*/
+    @include survol-bis;
 }
 
 .tuille-restaurant__image {
@@ -70,8 +74,15 @@
     @include new;
 }
 
+.favoris {
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    top: 175px;
+    right: 15px;
+}
+
 .tuille-restaurant__favoris {
-    position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -85,12 +96,16 @@
     .heart {
         z-index: 1;
         opacity: 1;
+        height: 25px;
+        width: 25px;
         transition: all 250ms ease-in-out;
     }
 
     .heart-rainbow {
+        height: 25px;
+        width: 25px;
         transform: scale(0.3);
-        z-index: 0;
+        z-index: 2;
         opacity: 0;
         transition: all 250ms ease-in-out;
     }
@@ -103,6 +118,11 @@
         .heart-rainbow {
             transform: scale(1);
             opacity: 1;
+        }
+
+        .tuille-restaurant {
+            @include ombre-light;
+            @include survol-bis;
         }
     }
 }
