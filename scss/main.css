@@ -882,6 +882,10 @@ input:focus {
   border-radius: 25px;
 }
 .cercle-check p {
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
   color: #99E2D0;
 }
 

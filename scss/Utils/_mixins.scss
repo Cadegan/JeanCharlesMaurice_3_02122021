@@ -161,6 +161,10 @@
     border-radius: 25px;
 
     p {
+        -moz-user-select: none;
+        -webkit-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
         color: $color-tertiary;
     }
 }
