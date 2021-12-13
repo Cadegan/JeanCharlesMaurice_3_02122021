@@ -119,10 +119,5 @@
             transform: scale(1);
             opacity: 1;
         }
-
-        .tuille-restaurant {
-            @include ombre-light;
-            @include survol-bis;
-        }
     }
 }

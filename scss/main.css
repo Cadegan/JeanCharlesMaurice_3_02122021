@@ -1028,27 +1028,6 @@ input:focus {
   transform: scale(1);
   opacity: 1;
 }
-.tuille-restaurant__favoris:hover .tuille-restaurant {
-  box-shadow: 2px 2px 10px #CCC;
-  position: relative;
-  z-index: 1;
-}
-.tuille-restaurant__favoris:hover .tuille-restaurant:hover::after {
-  opacity: 0.2;
-}
-.tuille-restaurant__favoris:hover .tuille-restaurant::after {
-  content: "";
-  position: absolute;
-  border-radius: 10px;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  background-color: whitesmoke;
-  opacity: 0;
-  z-index: 1;
-  transition: opacity 250ms;
-}
 
 /*Footer*/
 footer {
