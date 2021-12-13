@@ -15,10 +15,10 @@
     align-items: center;
     font-family: Shrikhand, sans-serif;
     margin-bottom: 30px;
+    justify-content: space-between;
 
     img {
         width: 1.2em;
-        margin-left: 50px;
     }
 }
 
@@ -51,41 +51,10 @@
     @include ombre-light;
     animation: vignette $anim-dur backwards;
 
-    @for $i from 1 through 3 {
+    @for $i from 1 through 4 {
         &-#{$i} {
             animation-delay: $anim-delay * $i;
         }
-    }
-
-    .ingredient,
-    h3 {
-        white-space: nowrap;
-        overflow: hidden;
-        text-overflow: ellipsis;
-    }
-
-    &-nom {
-        display: flex;
-        flex-direction: column;
-        width: 100%;
-        transition: all 450ms ease-in-out;
-
-        &-info {
-            display: flex;
-            justify-content: space-between;
-        }
-    }
-
-    &:hover .plat-select {
-        transform: translate(-70px);
-    }
-
-    &:hover .cercle-check {
-        transform: rotate(-360deg);
-    }
-
-    &:hover .vignette-plat-nom {
-        padding-right: 70px;
     }
 }
 

@@ -558,7 +558,9 @@ html {
 }
 #img-restaurant img {
   width: 100%;
-  height: auto;
+  height: 300px;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 /*Navigation principale*/
@@ -772,10 +774,10 @@ input:focus {
   align-items: center;
   font-family: Shrikhand, sans-serif;
   margin-bottom: 30px;
+  justify-content: space-between;
 }
 .nom-retaurant img {
   width: 1.2em;
-  margin-left: 50px;
 }
 
 .titre-ordre {
@@ -815,18 +817,6 @@ input:focus {
   -webkit-animation: vignette 300ms backwards;
           animation: vignette 300ms backwards;
 }
-.vignette-plat-1 {
-  -webkit-animation-delay: 428.5714285714ms;
-          animation-delay: 428.5714285714ms;
-}
-.vignette-plat-2 {
-  -webkit-animation-delay: 857.1428571429ms;
-          animation-delay: 857.1428571429ms;
-}
-.vignette-plat-3 {
-  -webkit-animation-delay: 1285.7142857143ms;
-          animation-delay: 1285.7142857143ms;
-}
 .vignette-plat .ingredient,
 .vignette-plat h3 {
   white-space: nowrap;
@@ -851,6 +841,22 @@ input:focus {
 }
 .vignette-plat:hover .vignette-plat-nom {
   padding-right: 70px;
+}
+.vignette-plat-1 {
+  -webkit-animation-delay: 428.5714285714ms;
+          animation-delay: 428.5714285714ms;
+}
+.vignette-plat-2 {
+  -webkit-animation-delay: 857.1428571429ms;
+          animation-delay: 857.1428571429ms;
+}
+.vignette-plat-3 {
+  -webkit-animation-delay: 1285.7142857143ms;
+          animation-delay: 1285.7142857143ms;
+}
+.vignette-plat-4 {
+  -webkit-animation-delay: 1714.2857142857ms;
+          animation-delay: 1714.2857142857ms;
 }
 
 .plat-detail-prix {

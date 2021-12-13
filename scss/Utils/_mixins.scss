@@ -141,6 +141,37 @@
     width: auto;
     background-color: white;
     overflow: hidden;
+
+    .ingredient,
+    h3 {
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+
+    &-nom {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        transition: all 450ms ease-in-out;
+
+        &-info {
+            display: flex;
+            justify-content: space-between;
+        }
+    }
+
+    &:hover .plat-select {
+        transform: translate(-70px);
+    }
+
+    &:hover .cercle-check {
+        transform: rotate(-360deg);
+    }
+
+    &:hover .vignette-plat-nom {
+        padding-right: 70px;
+    }
 }
 
 @mixin plat-select-model {
