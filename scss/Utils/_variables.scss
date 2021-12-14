@@ -221,12 +221,11 @@ $anim-delay: $anim-dur / 0.7;
 @keyframes vague {
     0% {
         transform: translateY(0);
-        opacity: 0;
+        opacity: 1;
     }
 
     4% {
         transform: translateY(-25px);
-        opacity: 1;
     }
 
     8% {

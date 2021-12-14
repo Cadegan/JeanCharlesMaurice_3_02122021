@@ -9,7 +9,8 @@
   left: 0;
   pointer-events: none;
   font-size: 3em;
-  animation: loader 1s ease-in-out 5s forwards;
+  animation: loader 0.5s linear 5s forwards;
+  font-family: Shrikhand, sans-serif;
 
   &__lettre {
     display: flex;

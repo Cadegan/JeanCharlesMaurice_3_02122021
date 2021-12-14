@@ -9,8 +9,9 @@
   left: 0;
   pointer-events: none;
   font-size: 3em;
-  -webkit-animation: loader 1s ease-in-out 5s forwards;
-          animation: loader 1s ease-in-out 5s forwards;
+  -webkit-animation: loader 0.5s linear 5s forwards;
+          animation: loader 0.5s linear 5s forwards;
+  font-family: Shrikhand, sans-serif;
 }
 .loader__lettre {
   display: flex;
@@ -248,11 +249,10 @@
 @-webkit-keyframes vague {
   0% {
     transform: translateY(0);
-    opacity: 0;
+    opacity: 1;
   }
   4% {
     transform: translateY(-25px);
-    opacity: 1;
   }
   8% {
     transform: translateY(0);
@@ -265,11 +265,10 @@
 @keyframes vague {
   0% {
     transform: translateY(0);
-    opacity: 0;
+    opacity: 1;
   }
   4% {
     transform: translateY(-25px);
-    opacity: 1;
   }
   8% {
     transform: translateY(0);
