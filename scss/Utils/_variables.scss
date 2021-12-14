@@ -186,6 +186,8 @@ $nombre-plat: (trois:3, quatre:4);
 $anim-dur: 300ms;
 $anim-delay: $anim-dur / 0.7;
 
+/* Animation apparition des vignettes */
+
 @keyframes vignette {
     0% {
         animation-timing-function: cubic-bezier(.17, .67, .83, .67);
@@ -197,5 +199,42 @@ $anim-delay: $anim-dur / 0.7;
         animation-timing-function: cubic-bezier(.17, .67, .83, .67);
         opacity: 100%;
         transform: translateY(0rem);
+    }
+}
+
+/* Animation du loader */
+
+@keyframes loader {
+    0% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: 0.5;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+@keyframes vague {
+    0% {
+        transform: translateY(0);
+        opacity: 0;
+    }
+
+    4% {
+        transform: translateY(-25px);
+        opacity: 1;
+    }
+
+    8% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+
+    70% {
+        opacity: 0;
     }
 }
