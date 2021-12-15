@@ -159,6 +159,10 @@
             display: flex;
             justify-content: space-between;
         }
+
+        h3 {
+            margin-right: 35px;
+        }
     }
 
     &:hover .plat-select {

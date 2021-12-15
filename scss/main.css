@@ -822,6 +822,9 @@ input:focus {
   display: flex;
   justify-content: space-between;
 }
+.vignette-plat-nom h3 {
+  margin-right: 35px;
+}
 .vignette-plat:hover .plat-select {
   transform: translate(-70px);
 }
