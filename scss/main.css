@@ -765,8 +765,45 @@ input:focus {
   margin-bottom: 30px;
   justify-content: space-between;
 }
-.nom-retaurant img {
-  width: 1.2em;
+
+.favoris-menu {
+  width: 25px;
+  height: 25px;
+  top: 175px;
+  right: 15px;
+  position: unset;
+}
+.favoris-menu .tuille-restaurant__favoris {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 25px;
+  width: 25px;
+}
+.favoris-menu .tuille-restaurant__favoris img {
+  position: absolute;
+}
+.favoris-menu .tuille-restaurant__favoris .heart {
+  z-index: 1;
+  opacity: 1;
+  height: 25px;
+  width: 25px;
+  transition: all 250ms ease-in-out;
+}
+.favoris-menu .tuille-restaurant__favoris .heart-rainbow {
+  height: 25px;
+  width: 25px;
+  transform: scale(0.3);
+  z-index: 2;
+  opacity: 0;
+  transition: all 250ms ease-in-out;
+}
+.favoris-menu .tuille-restaurant__favoris:hover .heart {
+  opacity: 0;
+}
+.favoris-menu .tuille-restaurant__favoris:hover .heart-rainbow {
+  transform: scale(1);
+  opacity: 1;
 }
 
 .titre-ordre {
@@ -986,32 +1023,31 @@ input:focus {
   font-weight: bold;
 }
 
-.favoris {
+.favoris-accueil {
   position: absolute;
   width: 25px;
   height: 25px;
   top: 175px;
   right: 15px;
 }
-
-.tuille-restaurant__favoris {
+.favoris-accueil .tuille-restaurant__favoris {
   display: flex;
   justify-content: center;
   align-items: center;
   height: 25px;
   width: 25px;
 }
-.tuille-restaurant__favoris img {
+.favoris-accueil .tuille-restaurant__favoris img {
   position: absolute;
 }
-.tuille-restaurant__favoris .heart {
+.favoris-accueil .tuille-restaurant__favoris .heart {
   z-index: 1;
   opacity: 1;
   height: 25px;
   width: 25px;
   transition: all 250ms ease-in-out;
 }
-.tuille-restaurant__favoris .heart-rainbow {
+.favoris-accueil .tuille-restaurant__favoris .heart-rainbow {
   height: 25px;
   width: 25px;
   transform: scale(0.3);
@@ -1019,10 +1055,10 @@ input:focus {
   opacity: 0;
   transition: all 250ms ease-in-out;
 }
-.tuille-restaurant__favoris:hover .heart {
+.favoris-accueil .tuille-restaurant__favoris:hover .heart {
   opacity: 0;
 }
-.tuille-restaurant__favoris:hover .heart-rainbow {
+.favoris-accueil .tuille-restaurant__favoris:hover .heart-rainbow {
   transform: scale(1);
   opacity: 1;
 }

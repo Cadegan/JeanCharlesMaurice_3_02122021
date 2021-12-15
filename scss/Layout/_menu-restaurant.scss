@@ -17,10 +17,11 @@
     letter-spacing: 0.1em;
     margin-bottom: 30px;
     justify-content: space-between;
+}
 
-    img {
-        width: 1.2em;
-    }
+.favoris-menu {
+    @include favoris;
+    position: unset;
 }
 
 .titre-ordre {
