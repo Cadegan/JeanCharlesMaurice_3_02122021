@@ -714,7 +714,7 @@ input:focus {
   right: 0;
   bottom: 0;
   left: 0;
-  background-color: darkgrey;
+  background-color: #9356DC;
   opacity: 0;
   z-index: -1;
   box-shadow: 0px 4px 5px black;
@@ -819,7 +819,7 @@ input:focus {
 .line {
   border-top-width: 3px;
   border-top-style: solid;
-  width: 17%;
+  width: 60px;
   border-color: #99E2D0;
 }
 

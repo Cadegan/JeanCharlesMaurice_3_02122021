@@ -6,7 +6,7 @@
 .bt-fonctionnement {
     @include liste-fonctionnement;
     @include ombre;
-    @include survol ($color:darkgrey);
+    @include survol ($color-primary);
 
     &__numero {
         display: flex;
